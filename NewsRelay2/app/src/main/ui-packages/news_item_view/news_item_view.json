@@ -1,0 +1,161 @@
+{
+  "name": "news_item_view",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "Pgwei0CFGyyne8nGcydGLP",
+    "node": "40:141",
+    "version": "4477548087",
+    "component-id": "d445742455919e4692bb5abe580c81cb6b8da068"
+  },
+  "default": "NewsItemView",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "Image"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "text",
+        "id": "Text"
+      }
+    ],
+    "modes": {
+      "NewsItemView": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "16.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Image",
+              "Title",
+              "Text"
+            ],
+            "item-spacing": "26.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Image",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              }
+            },
+            "image-content": "$image",
+            "scale": "cover"
+          },
+          {
+            "id": "Title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "line-height": "1.2102272727272727",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.2102272327129657",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "image": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "NewsItemView",
+      "size": {
+        "width": 360.0,
+        "height": 359.0
+      },
+      "parameters": {
+        "image": "image.jpeg",
+        "title": "Title",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices neque ornare"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

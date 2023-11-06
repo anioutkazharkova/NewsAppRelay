@@ -1,0 +1,251 @@
+{
+  "name": "news_item_row",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "S6zUsU32ma50ZnhAuva7qf",
+    "node": "10:2",
+    "version": "4486181108",
+    "component-id": "439b8f16eae69f70511dfd2b1708eb07fb77b18f"
+  },
+  "default": "NewsItemRow",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Content"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "image",
+        "id": "Image"
+      },
+      {
+        "type": "group",
+        "id": "TextGroup"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "text",
+        "id": "Text"
+      },
+      {
+        "type": "text",
+        "id": "Date"
+      }
+    ],
+    "modes": {
+      "NewsItemRow": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "12.0",
+            "tap-handler": "$onRowTapped",
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Content",
+              "top_level_synth"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Content",
+            "padding": "16.0",
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Image",
+              "TextGroup"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "border-radius": "12.0",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Image",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "image-content": "$image",
+            "scale": "cover"
+          },
+          {
+            "id": "TextGroup",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title",
+              "Text",
+              "Date"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "max-lines": "2",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.2102272510528564",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "4",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.2102272327129657",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Date",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$date",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "right",
+            "text-size": "11.0",
+            "line-height": "1.2102272727272727",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onRowTapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "image": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "date": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "NewsItemRow",
+      "size": {
+        "width": 360.0,
+        "height": 180.0
+      },
+      "parameters": {
+        "image": "image.jpeg",
+        "title": "Lorem Ipsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices neque ornare",
+        "date": "11.11.2023\n"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
